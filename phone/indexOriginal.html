@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-size: 20px;
+    
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #A94438;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    height: 300px;
+    object-fit: contain;
+}
+
+.logo-title-container {
+    bottom: 30px;
+    position: relative;
+    font-family: "Jersey 10";
+}
+
+.shop-name {
+    color: #FFCF9D;
+    letter-spacing: 0.2rem;
+}
+
+.shop-app {
+    color: #e3ad6b;
+    letter-spacing: 0.07rem;
+}
+
+/*-------------------------*/
+
+.input-container {
+    row-gap: 15px;
+}
+
+#uname {
+    border: 2px solid #DE8F5F;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: rgb(233, 204, 177);
+    font-family: "Source Code Pro";
+}
+
+#pw {
+    border: 2px solid #DE8F5F;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.button-container {
+    row-gap: 10px;
+    color: #FFCF9D;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+.forgot-password:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button {
+    color: rgb(185, 120, 85);
+    font-family: "Source Code Pro";
+}
+
+#login {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #FFB38E;
+}
+
+#create {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #FFB38E;
+}
+</style>
+
+</head>
+<body>
+    <form>
+        <div class="logo-container">
+            <img class="logo" src="Phone Storage/Download/phone/logo.png" alt="logo.png">
+        </div>
+
+        <div class="logo-title-container">
+            <h1 class="shop-name">Chrlz' SweetCakez</h1>
+            <h4 class="shop-app">Ordering App</h3>
+        </div>
+
+        <div class="input-container">
+            <div class="uname-container">
+                <label for="uname">
+                    <input type="text" id="uname" placeholder="Email or Phone" required>
+                </label>
+            </div>
+            
+            <div class="pw-container">
+                <label for="pw">
+                    <input type="password" id="pw" placeholder="Password" required>
+                </label>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <p class="forgot-password">Forgot Password?</p>
+            
+            <div class="login-container">
+                <label for="login">
+                    <button id="login">Login</button>
+                </label>
+            </div>
+            
+            <p>or</p>
+                
+            <div class="create-container">
+                <label for="create">
+                    <button id="create">Create an account</button>
+                </label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
